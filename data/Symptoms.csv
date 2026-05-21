@@ -1,0 +1,650 @@
+Disease,Symptoms
+Malaria,"Fever, Jaundice, Fever that comes and goes"
+Dengue,"Fever, Joint pain"
+Typhoid,Fever
+Tuberculosis,"Persistent cough, Swollen lymph nodes, Loss of appetite, Night sweats, Weight loss, Productive cough, Excessive sweating, Bloody sputum, Swollen lymph nodes, Unexplained weight loss, Coughing up blood (Hemoptysis), Fever that comes and goes"
+Bronchitis,"Persistent cough, Wheezing, Dry cough, Productive cough, Coughing up thick phlegm"
+COVID-19,"Persistent cough, Dry cough, Change in taste, Loss of taste, Change in smell, Loss of smell"
+Chikungunya,Joint pain
+Arthritis,"Joint pain, Clicking jaw, Wrist pain, Finger pain, Shoulder stiffness, Hip pain, Knee clicking, Elbow pain, Difficulty walking, Difficulty reaching overhead, Difficulty gripping objects, Reduced range of motion in joints"
+Chickenpox,Skin rash
+Measles,Skin rash
+Allergic dermatitis,Skin rash
+Migraine,"Headache, Sensitivity to light"
+Sinusitis,"Headache, Nasal congestion, Ear pain, Facial pain, Runny nose, Stuffy nose, Postnasal drip, Itchy nose, Change in smell, Bad breath, Facial pain"
+Hypertension,"Headache, Blood pressure fluctuations, Erectile dysfunction, Nose bleeding"
+Gastritis,"Abdominal pain, Vomiting, Nausea, Abdominal bloating, Excessive belching, Sour taste in mouth, Pain after eating, Indigestion"
+Appendicitis,"Abdominal pain, Abdominal rigidity, Rebound tenderness in abdomen, Abdominal guarding"
+Food poisoning,"Abdominal pain, Diarrhea, Vomiting"
+Gastroenteritis,Diarrhea
+Cholera,Diarrhea
+Viral infection,"Vomiting, Swollen lymph nodes, Mouth ulcers, Sudden hearing loss, General malaise (feeling unwell)"
+Anemia,"Fatigue, Dizziness, Palpitations, Cold hands and feet, Pale skin, Dark circles under eyes, Decreased exercise tolerance, Feeling faint, Increased sensitivity to cold, Cold intolerance, Shortness of breath with exertion, Feeling cold all the time, General malaise (feeling unwell)"
+Hypothyroidism,"Fatigue, Constipation, Cold hands and feet, Dry skin, Excessive sleepiness, Puffy eyes, Hair thinning, Unexplained weight gain, Developmental delay, Delayed teething, Short stature, Hair thinning, Brittle hair, Slow speech, Increased sensitivity to cold, Cold intolerance, Feeling cold all the time, Low body temperature (Hypothermia), Slow growth in children"
+Chronic fatigue syndrome,"Fatigue, Loss of interest in activities, Lack of motivation, General malaise (feeling unwell)"
+Asthma,"Difficulty breathing, Wheezing, Dry cough, Chest tightness, Chronic cough (more than 8 weeks)"
+Pneumonia,"Difficulty breathing, Chest pain, Productive cough, Bloody sputum, Hiccups, Shortness of breath at rest, Rapid breathing (Tachypnea), Coughing up thick phlegm"
+COPD,"Difficulty breathing, Wheezing, Cyanosis, Decreased exercise tolerance, Shortness of breath with exertion, Chronic cough (more than 8 weeks)"
+Pharyngitis,Sore throat
+Tonsillitis,Sore throat
+Common cold,"Sore throat, Nasal congestion, Runny nose, Stuffy nose, Sneezing"
+Allergic rhinitis,"Nasal congestion, Mouth breathing"
+Angina,"Chest pain, Chest pressure, Chest tightness, Burning sensation in chest, Pain radiating to arm/jaw/back"
+Gastroesophageal reflux,"Chest pain, Halitosis, Hiccups, Excessive belching, Excessive salivation, Postnasal drip, Excessive crying in infants"
+Vertigo,"Dizziness, Balance problems, Room spinning sensation"
+Low blood pressure,Dizziness
+Lymphoma,"Swollen lymph nodes, Night sweats, Swollen lymph nodes, Enlarged tonsils, Fever that comes and goes"
+Hepatitis,"Jaundice, Loss of appetite, Yellow skin, Yellow eyes, Decreased appetite"
+Liver cirrhosis,"Jaundice, Swelling in abdomen (Ascites)"
+Hemorrhoids,"Blood in stool, Anal bleeding, Rectal pain, Rectal itching, Feeling of pressure in rectum, Straining during bowel movements"
+Colorectal cancer,"Blood in stool, Anal bleeding"
+Dysentery,Blood in stool
+Urinary tract infection,"Burning urination, Frequent urination, Blood in urine, Painful urination, Bedwetting, Frequent urination in children, Bedwetting, Urinary incontinence, Urgency to urinate, Cloudy urine, Foul-smelling urine, Pink or cola-colored urine, Bedwetting (Enuresis) beyond age 5"
+Kidney stones,"Burning urination, Back pain, Blood in urine, Painful urination, Flank pain, Groin pain, Cloudy urine, Pink or cola-colored urine"
+Prostatitis,"Burning urination, Painful ejaculation, Premature ejaculation, Painful ejaculation, Blood in semen"
+Muscle strain,"Back pain, Stiff neck, Flank pain, Groin pain, Neck stiffness, Back stiffness, Muscle soreness after exercise, Sharp chest pain"
+Herniated disc,"Back pain, Lower back pain"
+Ear infection,"Ear pain, Ringing in ears, Hearing loss, Excessive crying in infants, Head tilting"
+Swimmer's ear,Ear pain
+Cataract,Blurred vision
+Glaucoma,"Blurred vision, Red eyes, Eye pain, Tunnel vision, Blind spots in vision, Halos around lights"
+Diabetic retinopathy,"Blurred vision, Distorted vision (straight lines appear wavy)"
+Depression,"Loss of appetite, Memory problems, Insomnia, Excessive sleepiness, Erectile dysfunction, Decreased appetite, Social withdrawal, Monotone voice, Difficulty concentrating, Difficulty planning or organizing, Irritability, Feeling hopeless, Feeling worthless, Loss of interest in activities, Social isolation, Obsessive thoughts, Feeling emotionally numb, Lack of motivation, Poor hygiene, Decreased libido"
+Menopause,"Night sweats, Excessive sweating, Heat intolerance, Vaginal dryness, Feeling hot all the time"
+Motion sickness,Nausea
+Pregnancy,"Nausea, Missed periods, Increased appetite, Swollen gums, Varicose veins, Craving non-food items (Pica), Metallic taste in mouth, Food aversion, Heartburn, Stretch marks (Striae)"
+Vitamin D deficiency,"Muscle weakness, Muscle cramps, Frequent fractures, Growing pains, Bowlegs, Delayed teething, Pain in the legs, Bow legs in children"
+Myasthenia gravis,"Muscle weakness, Facial weakness, Drooping eyelid, Droopy eyelid (Ptosis)"
+Thyroid disorders,"Muscle weakness, Hair loss, Premature ejaculation, Brittle nails, Hair loss, Premature graying, Irregular periods"
+Diabetes,"Frequent urination, Excessive thirst, Increased hunger, Numbness in extremities, Excessive urination at night, Erectile dysfunction, Frequent infections, Increased appetite, Delayed wound healing, Foot ulcers, Gangrene, Bedwetting, Excessive thirst in children, Frequent urination in children, Bedwetting, Frequent urination at night (Nocturia), Difficulty achieving erection, Frequent changes in eyeglass prescription, Yellow bumps on skin (Xanthomas), Sores on feet or legs that heal slowly, Poor wound healing, Recurrent infections"
+Prostate enlargement,"Frequent urination, Excessive urination at night, Inability to urinate, Frequent urination at night (Nocturia)"
+Irritable bowel syndrome,"Constipation, Abdominal bloating, Excessive flatulence, Recurrent abdominal pain in children"
+Dehydration,"Constipation, Excessive thirst, Muscle cramps, Decreased urine output, Sunken eyes, Dry mouth, White tongue, Cracked lips, Dry mouth, Leg cramps at night, Muscle spasms, Near fainting, Lightheadedness, Cloudy urine, Foul-smelling urine"
+Bladder cancer,Blood in urine
+Meningitis,"Stiff neck, Seizures, Neck stiffness, Headache with fever and stiff neck"
+Cervical spondylosis,"Stiff neck, Neck stiffness"
+Heart failure,"Ankle swelling, Excessive urination at night, Cyanosis, Decreased exercise tolerance, Frequent urination at night (Nocturia), Shortness of breath with exertion, Shortness of breath when lying flat (Orthopnea), Waking up breathless (Paroxysmal nocturnal dyspnea), Blue lips or fingernails (Cyanosis), Swelling in legs and ankles, Swelling in abdomen (Ascites), Prominent neck veins"
+Kidney disease,"Ankle swelling, Excessive thirst, Decreased urine output, Swollen face, Puffy eyes, Excessive thirst despite drinking, Swelling in legs and ankles, Swelling in abdomen (Ascites)"
+Venous insufficiency,"Ankle swelling, Swelling in legs and ankles"
+Cancer,"Weight loss, Unexplained weight loss, Decreased appetite"
+Hyperthyroidism,"Weight loss, Increased hunger, Tremors, Excessive sweating, Excessive sweating, Unexplained weight loss, Increased appetite, Excessive sweating in children, Hyperactivity, Agitation, Restlessness, Increased sensitivity to heat, Heat intolerance, Feeling hot all the time, Rapid heartbeat (Tachycardia)"
+Parasitic infection,Increased hunger
+Scabies,"Itchy skin, Itching in genital area"
+Eczema,"Itchy skin, Dry skin, Itchy ear canal"
+Allergies,"Itchy skin, Red eyes, Puffy eyes, Dark circles under eyes, Watery eyes, Runny nose, Stuffy nose, Postnasal drip, Sneezing, Itchy nose, Nasal polyps"
+Conjunctivitis,"Red eyes, Watery eyes, Eye discharge, Eye discharge (pus or watery), Crusting of eyelids upon waking"
+Vitamin deficiency,"Mouth ulcers, Pale skin, Tongue pain, Red tongue, Cracked lips, Red patches in mouth, Swollen tongue, Geographic tongue, Tingling sensation"
+Stress,"Mouth ulcers, Missed periods, Night terrors, Sleepwalking, Hair pulling, Hives, Cold sores, Memory lapses, Nightmares, Irregular periods, Eyelid twitching"
+Alopecia,"Hair loss, Hair loss"
+Nutritional deficiency,Hair loss
+Anxiety,"Palpitations, Insomnia, Blood pressure fluctuations, Irregular heartbeat, Premature ejaculation, Excessive sweating, Excessive sweating in children, Social withdrawal, Sleep problems in children, Nail biting, Thumb sucking, Hair pulling, Grinding teeth, Hand tremors when writing, Shaky voice, Difficulty finding words, Feeling detached, Difficulty concentrating, Irritability, Agitation, Restlessness, Feeling hopeless, Social isolation, Obsessive thoughts, Compulsive behaviors, Flashbacks, Nightmares, Alcohol withdrawal symptoms, Increased sensitivity to heat, Difficulty maintaining erection, Rapid breathing (Tachypnea), Shallow breathing, Feeling hot all the time, Pounding heart, Skipped heartbeats, Rapid heartbeat (Tachycardia)"
+Arrhythmia,"Palpitations, Irregular heartbeat, Pounding heart"
+Raynaud's disease,"Cold hands and feet, Finger pain, Increased sensitivity to cold, Cold intolerance, Raynaud's phenomenon (fingers change color in cold)"
+Dementia,"Memory problems, Confusion, Difficulty finding words, Memory lapses, Poor judgment, Confusion about time or place, Getting lost in familiar places, Difficulty planning or organizing, Problems with abstract thinking, Agitation, Poor hygiene"
+Vitamin B12 deficiency,"Memory problems, Numbness in extremities, Abnormal gait, Burning tongue, Premature graying, Clumsiness"
+Parkinson's disease,"Tremors, Frequent falls, Excessive salivation, Excessive salivation, Difficulty walking, Shuffling gait, Difficulty standing up, Hand tremors when writing, Shaky voice, Slow speech, Monotone voice"
+Essential tremor,"Tremors, Hand tremors when writing"
+Laryngitis,"Hoarseness, Hoarse voice, Barking cough, Voice change, Loss of voice, Pain when speaking"
+Vocal cord nodules,"Hoarseness, Hoarse voice, Voice change"
+Thyroid cancer,"Hoarseness, Hoarse voice, Neck swelling"
+Psoriasis,"Dry skin, Nail discoloration, Geographic tongue, Dandruff, Itchy scalp, Scalp sores"
+Sleep apnea,"Insomnia, Excessive sleepiness, Bedwetting, Snoring, Sleep problems in children, Bedwetting, Waking up breathless (Paroxysmal nocturnal dyspnea), Headache worse in the morning, Bedwetting (Enuresis) beyond age 5"
+Peripheral neuropathy,"Numbness in extremities, Tingling sensation, Crawling sensation on skin, Difficulty walking, Difficulty gripping objects, Dropping objects frequently, Unsteadiness"
+Sexually transmitted infection,"Painful urination, Vaginal discharge, Vaginal itching, Painful ejaculation, Rectal discharge"
+Rheumatoid arthritis,"Swollen joints, Joint deformities"
+Gout,"Swollen joints, Knee pain, Toe pain"
+Reactive arthritis,Swollen joints
+Electrolyte imbalance,"Muscle cramps, Irregular heartbeat, Leg cramps at night, Muscle twitching, Muscle spasms"
+Trigeminal neuralgia,"Facial pain, Jaw pain, Jaw pain, Facial pain"
+Dental abscess,"Facial pain, Jaw pain, Painful gums, Jaw pain, Facial swelling, Facial pain"
+Corneal abrasion,"Eye pain, Sensitivity to light"
+Iritis,"Eye pain, Sensitivity to light"
+Pheochromocytoma,Blood pressure fluctuations
+Platelet disorders,"Excessive bruising, Easy bruising"
+Vitamin K deficiency,"Excessive bruising, Bleeding gums"
+Leukemia,"Excessive bruising, Swollen gums, Bleeding gums, Pinpoint red spots on skin (Petechiae)"
+Dental cavity,Toothache
+Abscess,Toothache
+Gum disease,"Toothache, Halitosis, Bad breath, Metallic taste in mouth"
+Temporomandibular joint disorder,"Jaw pain, Lockjaw, Difficulty opening mouth, Clicking jaw, Jaw pain"
+Dental infection,"Halitosis, Excessive salivation, Excessive salivation"
+Lung cancer,"Bloody sputum, Clubbing of fingers/toes, Coughing up blood (Hemoptysis)"
+Sciatica,"Lower back pain, Hip pain"
+Kidney infection,Lower back pain
+Osteoarthritis,"Knee pain, Joint deformities"
+Ligament injury,"Knee pain, Knee clicking"
+Frozen shoulder,"Shoulder pain, Shoulder stiffness, Difficulty reaching overhead, Reduced range of motion in joints"
+Rotator cuff injury,"Shoulder pain, Shoulder stiffness, Difficulty reaching overhead"
+Bursitis,"Shoulder pain, Hip pain"
+Lactose intolerance,"Abdominal bloating, Excessive flatulence"
+Anal fissure,"Anal bleeding, Rectal pain, Straining during bowel movements"
+Urinary obstruction,Decreased urine output
+Syncope,Loss of consciousness
+Epilepsy,"Loss of consciousness, Seizures"
+Hypoglycemia,Loss of consciousness
+Delirium,"Confusion, Confusion about time or place, Seeing things that aren't there"
+Encephalitis,Confusion
+Stroke,"Slurred speech, Facial drooping, Limb weakness, Double vision, Facial weakness, Drooping eyelid, Loss of coordination, Shuffling gait, Slow speech, Poor judgment, Confusion about time or place, Getting lost in familiar places, Problems with abstract thinking, Disorganized thinking, Difficulty swallowing liquids, Sudden hearing loss, Inability to close eye completely, Tunnel vision"
+Transient ischemic attack,"Slurred speech, Facial drooping"
+Multiple sclerosis,"Slurred speech, Limb weakness, Double vision, Balance problems, Frequent falls, Loss of coordination, Increased sensitivity to heat"
+Bell's palsy,"Facial drooping, Loss of taste, Facial weakness, Inability to close eye completely"
+Guillain-Barré syndrome,Limb weakness
+Brain tumor,"Double vision, Seizures, Large head, Headache worse in the morning"
+Tinnitus,"Ringing in ears, Ringing in one ear"
+Meniere's disease,"Ringing in ears, Room spinning sensation, Ear fullness, Ringing in one ear"
+Age-related hearing loss,"Hearing loss, Gradual hearing loss"
+Acoustic neuroma,"Hearing loss, Ringing in one ear"
+Inner ear infection,Balance problems
+Orthostatic hypotension,"Frequent falls, Difficulty standing up, Feeling faint, Lightheadedness"
+Vaginitis,"Painful intercourse, Vaginal discharge, Pain during intercourse (Dyspareunia)"
+Endometriosis,"Painful intercourse, Abnormal vaginal bleeding, Menstrual pain, Pelvic pain, Pain during intercourse (Dyspareunia), Painful periods (Dysmenorrhea)"
+Pelvic inflammatory disease,"Painful intercourse, Menstrual pain, Pelvic pain, Pain during intercourse (Dyspareunia)"
+Cervical cancer,"Vaginal discharge, Abnormal vaginal bleeding"
+Uterine fibroids,"Abnormal vaginal bleeding, Painful periods (Dysmenorrhea), Heavy menstrual bleeding"
+Fibrocystic disease,Breast lump
+Breast cancer,"Breast lump, Nipple discharge, Inverted nipple (new onset)"
+Mastitis,"Breast lump, Breast pain, Skin changes on breast (dimpling redness)"
+Adenomyosis,"Menstrual pain, Painful periods (Dysmenorrhea), Heavy menstrual bleeding"
+Polycystic ovary syndrome,"Missed periods, Facial hair in women, Facial hair in women, Excessive hair growth"
+Epididymitis,"Testicular pain, Pain in testicle"
+Testicular torsion,"Testicular pain, Pain in testicle"
+Orchitis,"Testicular pain, Pain in testicle"
+Hydrocele,"Scrotal swelling, Lump in testicle, Swelling in scrotum"
+Varicocele,"Scrotal swelling, Swelling in scrotum"
+Testicular cancer,"Scrotal swelling, Lump in testicle, Swelling in scrotum"
+Seminal vesiculitis,"Painful ejaculation, Painful ejaculation"
+Urethritis,Painful ejaculation
+Proctitis,"Rectal pain, Rectal discharge"
+Urinary retention,"Inability to urinate, Feeling of incomplete bladder emptying"
+Urethral stricture,"Inability to urinate, Difficulty starting urination, Weak urine stream, Dribbling after urination"
+Jaundice,"Yellow skin, Yellow eyes"
+Gallstones,"Yellow skin, Pain after eating"
+Shock,Pale skin
+Pulmonary embolism,"Cyanosis, Shortness of breath at rest"
+Allergic reaction,"Swollen face, Swollen tongue, Hives"
+Cushing's syndrome,"Swollen face, Facial hair in women, Unexplained weight gain, Facial hair in women, Brittle hair, Excessive hair growth, Skin thinning, Stretch marks (Striae)"
+Iron deficiency,"Brittle nails, Hair thinning, Breath holding spells, Hair loss, Hair thinning, Restless legs"
+Fungal infection,"Brittle nails, Nail discoloration, Rectal itching, Dandruff, Itchy ear canal"
+Melanoma,"Nail discoloration, Moles"
+Malnutrition,"Sunken eyes, Failure to thrive, Short stature, Small head, Brittle hair, Craving non-food items (Pica), Poor wound healing, Slow growth in children"
+Aging,"Sunken eyes, Dry eyes, Age spots, Memory lapses, Droopy eyelid (Ptosis), Skin thinning"
+Sleep deprivation,Dark circles under eyes
+Gingivitis,"Swollen gums, Bleeding gums, Painful gums, Swollen gums"
+Vitamin C deficiency,"Swollen gums, Easy bruising, Painful gums"
+Esophageal stricture,"Difficulty swallowing, Difficulty swallowing solids, Feeling of food stuck in throat"
+Throat cancer,Difficulty swallowing
+Achalasia,"Difficulty swallowing, Regurgitation of food or sour liquid, Difficulty swallowing solids, Difficulty swallowing liquids"
+Globus sensation,"Lump in throat, Feeling of food stuck in throat"
+Thyroid nodule,Lump in throat
+Esophageal cancer,"Lump in throat, Difficulty swallowing solids"
+Goiter,Neck swelling
+Lymphadenopathy,Neck swelling
+Hiatal hernia,"Hiccups, Heartburn"
+Functional dyspepsia,Excessive belching
+Malabsorption,"Excessive flatulence, Greasy stools"
+Pinworms,Rectal itching
+Telogen effluvium,Hair thinning
+Adrenal disorders,Facial hair in women
+Infection,"Excessive sweating, Swollen lymph nodes, Excessive sweating in children, Hives, Inverted nipple (new onset), Blood in semen, Mucus in stool, Chills"
+Vitamin A deficiency,"Night blindness, Poor night vision"
+Retinitis pigmentosa,"Night blindness, Poor night vision, Tunnel vision, Difficulty seeing at night"
+Cataracts,"Night blindness, Poor night vision, Difficulty seeing at night, Halos around lights, Need for brighter light when reading, Frequent changes in eyeglass prescription"
+Sjögren's syndrome,"Dry eyes, Dry mouth, Dry mouth, Vaginal dryness"
+Computer vision syndrome,Dry eyes
+Blocked tear duct,"Watery eyes, Eye discharge (pus or watery)"
+Graves' disease,"Bulging eyes, Heat intolerance"
+Orbital cellulitis,Bulging eyes
+Orbital tumor,Bulging eyes
+Alcoholic liver disease,Yellow eyes
+Blepharitis,"Eye discharge, Gritty sensation in eye, Crusting of eyelids upon waking"
+Dacryocystitis,Eye discharge
+Medication side effect,"Dry mouth, Change in taste, Swollen gums, Dry mouth, Facial hair in women, Excessive hair growth, Vaginal dryness, Decreased libido, Metallic taste in mouth, Bitter taste in mouth"
+Glossitis,Tongue pain
+Oral candidiasis,Tongue pain
+Oral thrush,"White tongue, White patches in mouth, Painful swallowing (Odynophagia)"
+Leukoplakia,"White tongue, White patches in mouth"
+Scarlet fever,Red tongue
+Kawasaki disease,Red tongue
+Poor oral hygiene,"Black hairy tongue, Bad breath, Hairy tongue"
+Antibiotics,"Black hairy tongue, Hairy tongue"
+Tobacco use,"Black hairy tongue, Hairy tongue"
+Angular cheilitis,Cracked lips
+Zinc deficiency,"Change in taste, Loss of taste, Loss of smell, Delayed wound healing"
+Dry air,Nose bleeding
+Blood disorders,Nose bleeding
+Rhinitis,"Sneezing, Itchy nose"
+Chronic sinusitis,Nasal polyps
+Cystic fibrosis,"Nasal polyps, Coughing up thick phlegm"
+Nasal polyps,"Change in smell, Loss of smell"
+HIV,Frequent infections
+Immunodeficiency,"Frequent infections, Recurrent fever in children, Recurrent ear infections, Recurrent infections"
+Edema,Unexplained weight gain
+Peripheral vascular disease,"Delayed wound healing, Foot ulcers, Gangrene"
+Vitiligo,Skin discoloration
+Melasma,Skin discoloration
+Tinea versicolor,Skin discoloration
+Liver disease,"Easy bruising, Age spots, Spider veins, Pale stools"
+Neuropathy,"Foot ulcers, Burning sensation on skin, Skin sensitivity to touch"
+Buerger's disease,Gangrene
+Osteoporosis,"Frequent fractures, Loose teeth, Curvature of the spine"
+Paget's disease,"Frequent fractures, Bone pain"
+Normal growth,Growing pains
+Juvenile idiopathic arthritis,"Growing pains, Recurrent fever in children, Pain in the legs, Refusal to walk"
+Congenital heart disease,"Failure to thrive, Clubbing of fingers/toes"
+Celiac disease,"Failure to thrive, Greasy stools"
+Down syndrome,"Developmental delay, Delayed teething"
+Autism spectrum disorder,"Developmental delay, Toe walking, Speech delay, Social withdrawal, Repetitive behaviors, Temper tantrums, Regression in development, Monotone voice, Delayed milestones in children"
+Cerebral palsy,"Abnormal gait, Toe walking, High arched feet, Delayed milestones in children"
+Muscular dystrophy,Abnormal gait
+Hip dysplasia,Limping
+Leg length discrepancy,Limping
+Juvenile arthritis,Limping
+Tight Achilles tendon,Toe walking
+Blount's disease,"Bowlegs, Bow legs in children"
+Normal development,"Bowlegs, Knock knees, Temper tantrums, Thumb sucking"
+Rickets,"Knock knees, Bow legs in children, Knock knees in children"
+Obesity,"Knock knees, Flat feet, Snoring, Knock knees in children, Skin tags, Leaking urine when coughing/sneezing, Increased abdominal girth, Shortness of breath when lying flat (Orthopnea)"
+Normal variant,"Flat feet, High arched feet, Knock knees in children, Night terrors, Sleepwalking, Breath holding spells, Skin tags, Moles"
+Ligament laxity,Flat feet
+Charcot-Marie-Tooth disease,High arched feet
+Colic,Excessive crying in infants
+Periodic fever syndromes,Recurrent fever in children
+Constipation,"Recurrent abdominal pain in children, Feeling of pressure in rectum, Feeling of incomplete bowel movement, Straining during bowel movements"
+Abdominal migraine,Recurrent abdominal pain in children
+Chronic tonsillitis,Enlarged tonsils
+Infectious mononucleosis,Enlarged tonsils
+Adenoid hypertrophy,"Snoring, Mouth breathing, Recurrent ear infections"
+Deviated nasal septum,Mouth breathing
+Eustachian tube dysfunction,"Recurrent ear infections, Ear fullness, Muffled hearing"
+Precocious puberty,Early puberty
+Congenital adrenal hyperplasia,Early puberty
+Hormone-secreting tumors,Early puberty
+Constitutional delay,Delayed puberty
+Hypogonadism,Delayed puberty
+Chronic disease,Delayed puberty
+Growth hormone deficiency,"Short stature, Slow growth in children"
+Marfan syndrome,Tall stature
+Gigantism,Tall stature
+Klinefelter syndrome,Tall stature
+Diabetes insipidus,"Excessive thirst in children, Excessive thirst despite drinking"
+Psychogenic polydipsia,Excessive thirst in children
+Overactive bladder,"Frequent urination in children, Urinary incontinence, Urgency to urinate"
+Growing pains,Pain in the legs
+Toxic synovitis,Refusal to walk
+Fracture,Refusal to walk
+Refractive errors,Vision problems in children
+Amblyopia,Vision problems in children
+Strabismus,"Vision problems in children, Lazy eye (Amblyopia)"
+Torticollis,Head tilting
+Vision problems,"Head tilting, Unsteadiness"
+Hydrocephalus,Large head
+Familial macrocephaly,Large head
+Microcephaly,Small head
+Genetic disorders,Small head
+Hearing loss,Speech delay
+Intellectual disability,"Speech delay, Learning difficulties"
+ADHD,"Hyperactivity, Inattention, Learning difficulties, Temper tantrums, Sleep problems in children, Difficulty concentrating, Difficulty planning or organizing, Impulsive behavior, Learning disability, Behavioral problems in children"
+Lead poisoning,Hyperactivity
+Learning disabilities,"Inattention, Learning difficulties"
+Sleep disorders,"Inattention, Night terrors, Sleepwalking"
+OCD,"Repetitive behaviors, Tics, Nail biting, Excessive worry"
+Tic disorders,"Repetitive behaviors, Compulsive behaviors"
+Transient tic disorder,Tics
+Tourette syndrome,Tics
+Normal habit,Nail biting
+Dental problems,Thumb sucking
+Trichotillomania,Hair pulling
+Emotional dysregulation,Breath holding spells
+Rett syndrome,Regression in development
+Metabolic disorders,Regression in development
+Tetanus,"Lockjaw, Difficulty opening mouth"
+Peritonsillar abscess,Lockjaw
+Horner's syndrome,Drooping eyelid
+Bruxism,Grinding teeth
+Dental malocclusion,Grinding teeth
+Poor dental hygiene,"Frequent cavities, Tooth discoloration"
+Diet high in sugar,Frequent cavities
+Genetic factors,"Frequent cavities, Premature graying, Freckles, Vitiligo"
+Dental erosion,Teeth sensitivity
+Gum recession,Teeth sensitivity
+Cracked tooth,Teeth sensitivity
+Periodontal disease,"Loose teeth, Receding gums"
+Trauma,"Loose teeth, Feeling worthless, Blood in semen"
+Dental caries,Black spots on teeth
+Staining,Black spots on teeth
+Fluorosis,"Black spots on teeth, Tooth discoloration"
+Tetracycline use,Tooth discoloration
+Aggressive brushing,Receding gums
+Smoking,Receding gums
+Canker sores,Sores on gums
+Herpes,"Sores on gums, Open sores on face"
+Oral cancer,"Sores on gums, Difficulty opening mouth"
+Oral lichen planus,White patches in mouth
+Erythroplakia,Red patches in mouth
+Geographic tongue,Red patches in mouth
+Angioedema,"Swollen tongue, Facial swelling"
+Benign condition,Geographic tongue
+Burning mouth syndrome,Burning tongue
+Candidiasis,Burning tongue
+GERD,"Excessive salivation, Feeling of food stuck in throat, Chest pressure"
+Malocclusion,Clicking jaw
+Parotitis,Facial swelling
+Rosacea,"Facial redness, Facial rash, Nodules on face"
+Lupus,"Facial redness, Facial rash, Raynaud's phenomenon (fingers change color in cold)"
+Seborrheic dermatitis,"Facial redness, Dandruff, Itchy scalp, Scalp sores"
+Contact dermatitis,Facial rash
+Acne,Nodules on face
+Basal cell carcinoma,"Nodules on face, Pearly or waxy bump on skin"
+Impetigo,Open sores on face
+Skin cancer,Open sores on face
+Androgenetic alopecia,Hair thinning
+Head lice,Itchy scalp
+Folliculitis,"Scalp sores, Boils"
+Tension headache,"Scalp tenderness, Band-like pressure around head, Tenderness of scalp"
+Scalp infection,Scalp tenderness
+Temporal arteritis,"Scalp tenderness, Tenderness of scalp"
+Staphylococcal infection,Boils
+Hidradenitis suppurativa,Boils
+Insulin resistance,Skin tags
+Atypical nevus,Moles
+Sun exposure,Freckles
+Xeroderma pigmentosum,Freckles
+Sun damage,Age spots
+Port wine stain,Birthmarks
+Hemangioma,Birthmarks
+Nevus,Birthmarks
+Autoimmune disorder,Vitiligo
+Inflammatory conditions,Vitiligo
+Burns,Blisters
+Friction,"Blisters, Calluses, Corns"
+Pemphigus,Blisters
+Pressure,"Calluses, Corns"
+Hyperkeratosis,Calluses
+Improper footwear,Corns
+Human papillomavirus,Warts
+Immune suppression,Warts
+Skin trauma,Warts
+Chronic venous insufficiency,"Varicose veins, Spider veins"
+Prolonged standing,Varicose veins
+Hormonal changes,"Spider veins, Mood swings"
+Herpes simplex virus,"Cold sores, Sores on genitals"
+Weakened immune system,Cold sores
+Peripheral artery disease,"Leg cramps at night, Calf pain when walking (Claudication), Sores on feet or legs that heal slowly"
+Restless legs syndrome,"Restless legs, Restlessness"
+Kidney failure,Restless legs
+Pyelonephritis,Flank pain
+Ovarian cysts,Pelvic pain
+Hernia,Groin pain
+Plantar fasciitis,Heel pain
+Achilles tendinitis,Heel pain
+Heel spurs,Heel pain
+Carpal tunnel syndrome,"Wrist pain, Tingling sensation, Difficulty gripping objects, Dropping objects frequently"
+Tendinitis,Wrist pain
+Trigger finger,Finger pain
+Bunion,Toe pain
+Ingrown toenail,Toe pain
+Ankylosing spondylitis,Back stiffness
+Degenerative disc disease,"Back stiffness, Loss of height"
+Meniscus tear,"Knee clicking, Knee locking"
+Loose body,Knee locking
+Patellar dislocation,Knee locking
+Ligament tear (ACL/PCL),Knee instability
+Patellar instability,Knee instability
+Muscle weakness,"Knee instability, Difficulty standing up, Dropping objects frequently"
+Tennis elbow,Elbow pain
+Golfer's elbow,Elbow pain
+Benign fasciculation syndrome,Muscle twitching
+Motor neuron disease,Muscle twitching
+Muscle fatigue,Muscle spasms
+Delayed onset muscle soreness (DOMS),Muscle soreness after exercise
+Rhabdomyolysis,Muscle soreness after exercise
+Shingles,"Burning sensation on skin, Pain behind the ear"
+Sunburn,"Burning sensation on skin, Skin sensitivity to touch"
+Formication,Crawling sensation on skin
+Delusional parasitosis,Crawling sensation on skin
+Ataxia,"Loss of coordination, Clumsiness"
+Dyspraxia,Clumsiness
+Normal pressure hydrocephalus,Shuffling gait
+Vocal tremor,Shaky voice
+Aphasia (stroke-related),Difficulty finding words
+Vasovagal syncope,Feeling faint
+Presyncope,Near fainting
+Low blood sugar,Near fainting
+Inner ear problems,Lightheadedness
+Benign paroxysmal positional vertigo (BPPV),Room spinning sensation
+Balance disorder,Unsteadiness
+Depersonalization disorder,Feeling detached
+PTSD,"Feeling detached, Nightmares, Feeling emotionally numb, Difficulty trusting others"
+Derealization disorder,Feeling unreal
+Panic attack,Feeling unreal
+Migraine aura,"Feeling unreal, Seeing flashes of light"
+Substance abuse,"Poor judgment, Impulsive behavior, Risky behavior"
+Alzheimer's disease,Getting lost in familiar places
+Schizophrenia,"Problems with abstract thinking, Hearing voices, Seeing things that aren't there, Paranoia, Delusions, Disorganized thinking, Poor hygiene"
+Bipolar disorder,"Mood swings, Delusions"
+Premenstrual syndrome (PMS),Mood swings
+PMS,Irritability
+Chronic illness,Feeling hopeless
+Low self-esteem,Feeling worthless
+Anhedonia,Loss of interest in activities
+Agoraphobia,"Social isolation, Panic attacks, Phobias"
+Generalized anxiety disorder,Excessive worry
+Panic disorder,"Excessive worry, Panic attacks"
+Specific phobia,"Panic attacks, Phobias"
+Social anxiety disorder,Phobias
+Obsessive-compulsive disorder (OCD),"Obsessive thoughts, Compulsive behaviors"
+Post-traumatic stress disorder (PTSD),Flashbacks
+Acute stress disorder,Flashbacks
+Dissociative disorder,Feeling emotionally numb
+Personality disorder,"Difficulty trusting others, Risky behavior"
+Past trauma,Difficulty trusting others
+Bipolar disorder (mania),"Hearing voices, Disorganized thinking, Impulsive behavior, Risky behavior"
+Severe depression,Hearing voices
+Drug withdrawal,Seeing things that aren't there
+Delusional disorder,"Paranoia, Delusions"
+Severe anxiety,Paranoia
+Schizophrenia (negative symptoms),Lack of motivation
+Substance use disorder,Substance craving
+Addiction,"Substance craving, Drug withdrawal symptoms"
+Withdrawal,Substance craving
+Delirium tremens,Alcohol withdrawal symptoms
+Seizures,Alcohol withdrawal symptoms
+Varies by drug (e.g.,Drug withdrawal symptoms
+nausea,Drug withdrawal symptoms
+insomnia,Drug withdrawal symptoms
+pain),Drug withdrawal symptoms
+Diabetes mellitus,Excessive thirst despite drinking
+Stress incontinence,"Urinary incontinence, Leaking urine when coughing/sneezing"
+Interstitial cystitis,Urgency to urinate
+Weak pelvic floor muscles,Leaking urine when coughing/sneezing
+Prostate enlargement (BPH),"Difficulty starting urination, Weak urine stream, Dribbling after urination, Feeling of incomplete bladder emptying"
+Neurogenic bladder,"Difficulty starting urination, Feeling of incomplete bladder emptying"
+Bladder muscle weakness,Weak urine stream
+Overflow incontinence,Dribbling after urination
+Certain foods/medications,Foul-smelling urine
+Hematuria (blood in urine),Pink or cola-colored urine
+Yeast infection,Vaginal itching
+Bacterial vaginosis,"Vaginal itching, Abnormal vaginal odor"
+Trichomoniasis,Abnormal vaginal odor
+Poor hygiene,Abnormal vaginal odor
+Bleeding disorders,"Heavy menstrual bleeding, Purple spots on skin (Purpura)"
+Polycystic ovary syndrome (PCOS),Irregular periods
+Hormonal imbalance,Bleeding between periods
+Uterine polyps,"Bleeding between periods, Bleeding after menopause"
+Cervical issues,Bleeding between periods
+Endometrial cancer,Bleeding after menopause
+Vaginal atrophy,Bleeding after menopause
+Fibrocystic changes,Breast pain
+Menstrual cycle changes,Breast pain
+Prolactinoma,Nipple discharge
+Duct ectasia,"Nipple discharge, Inverted nipple (new onset)"
+Inflammatory breast cancer,Skin changes on breast (dimpling redness)
+Fat necrosis,Skin changes on breast (dimpling redness)
+Epididymal cyst,Lump in testicle
+Erectile dysfunction,"Difficulty achieving erection, Difficulty maintaining erection"
+Cardiovascular disease,Difficulty achieving erection
+Vascular problems,Difficulty maintaining erection
+Low testosterone,Decreased libido
+Urethritis (Gonorrhea,Penile discharge
+Chlamydia),Penile discharge
+Balanitis,Penile discharge
+Syphilis,Sores on genitals
+Chancroid,Sores on genitals
+Human papillomavirus (HPV),Warts on genitals
+Fungal infection (jock itch),Itching in genital area
+Pubic lice,Itching in genital area
+Anal fistula,Rectal discharge
+Rectal prolapse,"Feeling of pressure in rectum, Feeling of incomplete bowel movement"
+Fecal incontinence,"Difficulty controlling bowel movements, Loss of bowel control"
+Nerve damage,"Difficulty controlling bowel movements, Loss of bowel control, Droopy eyelid (Ptosis)"
+Diarrhea,"Difficulty controlling bowel movements, Loss of bowel control"
+Pancreatitis,"Greasy stools, Pale stools"
+Bile duct obstruction,Pale stools
+Lower gastrointestinal bleeding (hemorrhoids,Bright red blood in stool
+diverticulosis,Bright red blood in stool
+colitis),Bright red blood in stool
+Irritable bowel syndrome (IBS),"Mucus in stool, Alternating constipation and diarrhea, Feeling of incomplete bowel movement, Bloating after eating"
+Ulcerative colitis,Mucus in stool
+Inflammatory bowel disease (IBD),Alternating constipation and diarrhea
+Ascites (fluid accumulation),Increased abdominal girth
+Tumor,Increased abdominal girth
+Liver cirrhosis (caput medusae),Visible veins on abdomen
+Portal hypertension,Visible veins on abdomen
+Peritonitis,"Abdominal rigidity, Rebound tenderness in abdomen, Abdominal guarding"
+Bowel perforation,Abdominal rigidity
+Cholecystitis,Abdominal guarding
+Pregnancy cravings/aversions,Loss of appetite for specific foods
+Food intolerance,"Loss of appetite for specific foods, Bloating after eating"
+Psychological factors,Loss of appetite for specific foods
+Iron deficiency anemia,Craving non-food items (Pica)
+Gastroesophageal reflux disease (GERD),"Sour taste in mouth, Indigestion, Heartburn, Regurgitation of food or sour liquid, Water brash (excess saliva with reflux)"
+Acid reflux,Bitter taste in mouth
+Liver or gallbladder problems,Bitter taste in mouth
+Eating disorder,Food aversion
+Chemotherapy side effect,Food aversion
+Gastroparesis,"Feeling full quickly (Early satiety), Bloating after eating"
+Stomach ulcer,Feeling full quickly (Early satiety)
+Stomach cancer,Feeling full quickly (Early satiety)
+Peptic ulcer,"Pain after eating, Indigestion"
+Neurological disorders,Difficulty swallowing liquids
+Esophagitis,"Painful swallowing (Odynophagia), Burning sensation in chest"
+Throat infection,Painful swallowing (Odynophagia)
+Heart attack,"Chest pressure, Pain radiating to arm/jaw/back"
+Anxiety attack,Chest tightness
+Pleurisy,Sharp chest pain
+Pericarditis,Sharp chest pain
+Heartburn (GERD),Burning sensation in chest
+Severe heart failure,Shortness of breath at rest
+Severe COPD,Shortness of breath when lying flat (Orthopnea)
+Asthma attack,Rapid breathing (Tachypnea)
+Pain,Shallow breathing
+Respiratory muscle weakness,Shallow breathing
+Hypoxia (low oxygen),Blue lips or fingernails (Cyanosis)
+Severe lung disease,Blue lips or fingernails (Cyanosis)
+Chronic lung disease,Clubbing of fingers/toes
+Bronchiectasis,Coughing up blood (Hemoptysis)
+Bacterial infection (bronchitis,Coughing up yellow/green phlegm
+pneumonia),"Coughing up yellow/green phlegm, High fever (above 103F or 39.4C)"
+Croup,Barking cough
+Pertussis,Whooping cough sound
+Postnasal drip,Chronic cough (more than 8 weeks)
+Thyroid problems,Voice change
+Vocal cord paralysis,Loss of voice
+Overuse,Loss of voice
+Vocal cord strain,Pain when speaking
+Earwax impaction,"Ear fullness, Muffled hearing"
+Ear infection (otitis media/externa),Ear discharge
+Ruptured eardrum,Ear discharge
+Pulsatile tinnitus,Pulsating sound in ear
+Vascular abnormality,Pulsating sound in ear
+High blood pressure,"Pulsating sound in ear, Headache worse in the morning"
+Auditory hallucinations (Schizophrenia,Hearing voices when alone
+psychosis),Hearing voices when alone
+Otitis media,"Muffled hearing, Pain behind the ear"
+Sensorineural hearing loss,Sudden hearing loss
+Noise exposure,Gradual hearing loss
+Otosclerosis,Gradual hearing loss
+Mastoiditis,Pain behind the ear
+Otitis externa (swimmer's ear),Itchy ear canal
+Conjunctivitis (pink eye),Eye redness
+Dry eye,Eye redness
+Uveitis,"Eye redness, Seeing floaters"
+Corneal ulcer,Eye discharge (pus or watery)
+Dry eye syndrome,Gritty sensation in eye
+Foreign body,Gritty sensation in eye
+Infected eyelash follicle,Stye (painful lump on eyelid)
+Blocked oil gland,Chalazion (painless lump on eyelid)
+Fatigue,Eyelid twitching
+Caffeine,Eyelid twitching
+Facial nerve injury,Inability to close eye completely
+Posterior vitreous detachment,Seeing floaters
+Retinal tear,Seeing floaters
+Retinal tear or detachment,Seeing flashes of light
+Retinal detachment,Curtain or veil over vision
+Macular degeneration,"Blind spots in vision, Distorted vision (straight lines appear wavy)"
+Optic neuritis,Blind spots in vision
+Night blindness (Vitamin A def.),Difficulty seeing at night
+Corneal edema,Halos around lights
+Presbyopia (age-related farsightedness),Need for brighter light when reading
+Keratoconus,Frequent changes in eyeglass prescription
+Muscle imbalance,Crossed eyes (Strabismus)
+Nerve problems,Crossed eyes (Strabismus)
+Refractive error,Crossed eyes (Strabismus)
+Unequal refractive error,Lazy eye (Amblyopia)
+Cataract in childhood,Lazy eye (Amblyopia)
+Fibromyalgia,Skin sensitivity to touch
+Scleroderma,"Skin thickening, Raynaud's phenomenon (fingers change color in cold)"
+Lymphedema,Skin thickening
+Chronic eczema,Skin thickening
+Long-term steroid use,Skin thinning
+Rapid weight gain/loss,Stretch marks (Striae)
+Vasculitis,Purple spots on skin (Purpura)
+Medication reaction,Purple spots on skin (Purpura)
+Thrombocytopenia,Pinpoint red spots on skin (Petechiae)
+Infection (meningitis,Pinpoint red spots on skin (Petechiae)
+sepsis),Pinpoint red spots on skin (Petechiae)
+High cholesterol,Yellow bumps on skin (Xanthomas)
+Sebaceous hyperplasia,Pearly or waxy bump on skin
+Squamous cell carcinoma,Firm red nodule on skin
+Keratoacanthoma,Firm red nodule on skin
+Skin cancer (basal cell,Sore that does not heal
+squamous cell),Sore that does not heal
+Chronic infection,Sore that does not heal
+Autoimmune condition,Loss of pigment in patches (Vitiligo)
+Addison's disease,"Darkening of skin creases, Bronze skin"
+Acanthosis nigricans (insulin resistance),Darkening of skin creases
+Hemochromatosis,Bronze skin
+Systemic lupus erythematosus (SLE),Butterfly rash across face
+Injury,Reduced range of motion in joints
+Osteoporosis (fracture),Bone pain
+Bone cancer,Bone pain
+Scoliosis,Curvature of the spine
+Kyphosis,Curvature of the spine
+Osteoporosis (vertebral fractures),Loss of height
+Poor circulation,"Feeling cold all the time, Poor wound healing"
+Palpitations,Pounding heart
+Premature atrial/ventricular contractions (PACs/PVCs),Skipped heartbeats
+Arrhythmia (SVT,Rapid heartbeat (Tachycardia)
+Afib),Rapid heartbeat (Tachycardia)
+Heart block,Slow heartbeat (Bradycardia)
+Sick sinus syndrome,Slow heartbeat (Bradycardia)
+Medications,Slow heartbeat (Bradycardia)
+Superior vena cava obstruction,Prominent neck veins
+Deep vein thrombosis (DVT),One leg swollen and painful
+Cellulitis,One leg swollen and painful
+Concussion,Headache after head injury
+Subdural hematoma,Headache after head injury
+Cluster headache,Severe pain around one eye
+Fever,Chills
+Hypothermia,Chills
+Severe infection (sepsis,High fever (above 103F or 39.4C)
+Heat stroke,High fever (above 103F or 39.4C)
+Exposure to cold,Low body temperature (Hypothermia)
+Sepsis (in elderly/infants),Low body temperature (Hypothermia)
+Chronic steroid use,Recurrent infections
+Developmental delay,Delayed milestones in children
+Specific learning disorder (dyslexia,Learning disability
+dyscalculia),Learning disability
+Oppositional defiant disorder,Behavioral problems in children
+Conduct disorder,Behavioral problems in children
+Delayed bladder control,Bedwetting (Enuresis) beyond age 5

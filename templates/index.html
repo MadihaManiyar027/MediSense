@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediSense — AI Symptom Checker</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+ <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    :root{
+      --bg:#f7f3ef;
+      --card:#fff9f5;
+      --border:rgba(100,80,60,.10);
+      --accent:#7c6f8e;
+      --accent2:#7aaa9a;
+      --accent3:#c47a8a;
+      --text:#3a3530;
+      --muted:#8c7f75;
+      --gold:#d4a04a;
+      --radius:16px;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:'DM Sans',sans-serif;
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:'';
+      position:fixed;
+      inset:0;
+      background:
+      radial-gradient(circle at top left, rgba(124,111,142,.05), transparent 40%),
+      radial-gradient(circle at bottom right, rgba(122,170,154,.04), transparent 40%);
+      z-index:-1;
+    }
+
+    header{
+      padding:1.4rem 2rem;
+      border-bottom:1px solid var(--border);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(247,243,239,.85);
+      backdrop-filter:blur(20px);
+    }
+
+    .logo{
+      font-family:'Syne',sans-serif;
+      font-size:1.6rem;
+      font-weight:800;
+      color:var(--accent);
+    }
+
+    .logo span{
+      color:var(--accent3);
+    }
+
+    .badge{
+      color:var(--accent2);
+      border:1px solid rgba(122,170,154,.3);
+      padding:.4rem .8rem;
+      border-radius:999px;
+      font-size:.75rem;
+    }
+
+    .hero{
+      max-width:850px;
+      margin:auto;
+      text-align:center;
+      padding:5rem 2rem 3rem;
+    }
+
+    .hero h1{
+      font-family:'Syne',sans-serif;
+      font-size:4rem;
+      line-height:1.1;
+      margin-bottom:1rem;
+    }
+
+    .hero h1 span{
+      color:var(--accent);
+    }
+
+    .hero p{
+      color:var(--muted);
+      line-height:1.8;
+      font-size:1rem;
+    }
+
+    .search-card{
+      max-width:720px;
+      margin:auto;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:24px;
+      padding:2rem;
+    }
+
+    .input-label{
+      color:var(--accent);
+      margin-bottom:.8rem;
+      display:block;
+      font-size:.8rem;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+    }
+
+    textarea{
+      width:100%;
+      background:rgba(124,111,142,.05);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:1rem;
+      color:var(--text);
+      resize:vertical;
+      min-height:100px;
+      font-size:1rem;
+    }
+
+    textarea:focus{
+      outline:none;
+      border-color:var(--accent);
+    }
+
+    .chip-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.5rem;
+      margin-top:1rem;
+    }
+
+    .chip{
+      background:rgba(124,111,142,.10);
+      border:1px solid rgba(124,111,142,.25);
+      color:var(--accent);
+      padding:.4rem .8rem;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:.8rem;
+    }
+
+    .chip:hover{
+      background:rgba(124,111,142,.20);
+    }
+
+    .button-row{
+      display:flex;
+      gap:12px;
+      margin-top:1.5rem;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      border:none;
+      border-radius:14px;
+      padding:1rem 1.2rem;
+      font-weight:700;
+      cursor:pointer;
+      transition:.2s;
+      font-family:'Syne',sans-serif;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+    }
+
+    .btn-primary{
+      flex:1;
+      background:#b8a5cc;
+      color:white;
+    }
+
+    .btn-clear{
+      background:#d99aaa;
+      color:white;
+    }
+
+    .btn-location{
+      background:#9dcfc0;
+      color:#1e3d36;
+    }
+
+    .error-box{
+      max-width:720px;
+      margin:1.2rem auto;
+      background:rgba(196,122,138,.08);
+      border:1px solid rgba(196,122,138,.25);
+      padding:1rem;
+      border-radius:14px;
+      display:none;
+      color:var(--accent3);
+    }
+
+    #results{
+      max-width:1100px;
+      margin:auto;
+      padding:3rem 1rem 5rem;
+    }
+
+    .results-header{
+      text-align:center;
+      margin-bottom:2rem;
+    }
+
+    .results-header h2{
+      font-family:'Syne',sans-serif;
+      margin-bottom:.5rem;
+    }
+
+    .hospital-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+      gap:1.2rem;
+      margin-top:1rem;
+    }
+
+    .h-card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:1.4rem;
+    }
+
+    .h-name{
+      font-family:'Syne',sans-serif;
+      font-weight:700;
+      margin-bottom:.4rem;
+      font-size:1.05rem;
+    }
+
+    .h-rating{
+      color:var(--gold);
+      font-size:.9rem;
+      margin-bottom:.5rem;
+    }
+
+    .h-spec{
+      color:var(--muted);
+      font-size:.85rem;
+      margin-bottom:.8rem;
+    }
+
+    .distance{
+      color:var(--accent2);
+      font-size:.85rem;
+      font-weight:600;
+      margin-bottom:.8rem;
+    }
+
+    .h-info{
+      display:flex;
+      flex-direction:column;
+      gap:.5rem;
+      font-size:.85rem;
+    }
+
+    .h-map{
+      display:inline-block;
+      margin-top:1rem;
+      padding:.6rem 1rem;
+      background:rgba(124,111,142,.08);
+      border:1px solid rgba(124,111,142,.2);
+      color:var(--accent);
+      text-decoration:none;
+      border-radius:10px;
+      font-size:.82rem;
+    }
+
+    .prediction{
+      margin-bottom:3rem;
+    }
+
+    .prediction h3{
+      font-family:'Syne',sans-serif;
+      margin-bottom:1rem;
+      font-size:1.5rem;
+    }
+
+    .top-title{
+      color:var(--accent2);
+      margin-top:1.2rem;
+      margin-bottom:1rem;
+      font-weight:700;
+    }
+
+    @media(max-width:700px){
+
+      .hero h1{
+        font-size:2.4rem;
+      }
+
+      .button-row{
+        flex-direction:column;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Medi<span>Sense</span></div>
+  <div class="badge">AI Symptom Checker</div>
+</header>
+
+<section class="hero">
+  <h1>
+    Describe your symptoms.<br>
+    <span>Discover what it might be.</span>
+  </h1>
+
+  <p>
+    Enter symptoms below and MediSense will predict possible diseases
+    and recommend nearby hospitals.
+  </p>
+</section>
+
+<div class="search-card">
+
+  <label class="input-label">
+    Your Symptoms
+  </label>
+
+  <textarea
+    id="symptom-input"
+    placeholder="e.g. Fever, Headache, Cough..."
+  ></textarea>
+
+  <div class="chip-row">
+
+    <span class="chip" onclick="addChip('Fever')">Fever</span>
+
+    <span class="chip" onclick="addChip('Cough')">Cough</span>
+
+    <span class="chip" onclick="addChip('Headache')">Headache</span>
+
+    <span class="chip" onclick="addChip('Fatigue')">Fatigue</span>
+
+    <span class="chip" onclick="addChip('Nausea')">Nausea</span>
+
+    <span class="chip" onclick="addChip('Chest pain')">Chest pain</span>
+
+  </div>
+
+  <div class="button-row">
+
+    <button class="btn btn-primary" onclick="runPredict()">
+      Analyse Symptoms
+    </button>
+
+    <button class="btn btn-clear" onclick="clearSymptoms()">
+      Clear
+    </button>
+
+    <button class="btn btn-location" onclick="getLocation()">
+      Use My Location
+    </button>
+
+  </div>
+
+</div>
+
+<div class="error-box" id="error-box"></div>
+
+<section id="results"></section>
+
+<script>
+
+  let userLatitude = null;
+  let userLongitude = null;
+
+  function addChip(text){
+
+    const ta = document.getElementById('symptom-input');
+
+    const val = ta.value.trim();
+
+    ta.value = val
+      ? val + ', ' + text
+      : text;
+  }
+
+  function clearSymptoms(){
+
+    document.getElementById('symptom-input').value = '';
+
+    document.getElementById('results').innerHTML = '';
+
+    hideError();
+  }
+
+  function getLocation(){
+
+    if(!navigator.geolocation){
+
+      alert("Geolocation not supported");
+
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+
+      position => {
+
+        userLatitude = position.coords.latitude;
+
+        userLongitude = position.coords.longitude;
+
+        alert("Location detected successfully!");
+
+      },
+
+      error => {
+
+        alert("Unable to fetch location");
+
+      }
+
+    );
+  }
+
+  function showError(msg){
+
+    const box = document.getElementById('error-box');
+
+    box.style.display = 'block';
+
+    box.innerHTML = msg;
+  }
+
+  function hideError(){
+
+    document.getElementById('error-box').style.display = 'none';
+  }
+
+  function starStr(rating){
+
+    const full = Math.floor(rating);
+
+    return '★'.repeat(full) +
+           '☆'.repeat(5 - full);
+  }
+
+ function hospitalCard(h){
+
+  return `
+
+    <div class="h-card">
+
+      <div class="h-name">
+        ${h.name}
+      </div>
+
+      <div class="h-rating">
+        ${starStr(h.rating)}
+        (${h.rating})
+      </div>
+
+      <div class="h-spec">
+        ${h.specialisation}
+      </div>
+
+      ${
+        h.distance_km !== undefined &&
+        h.distance_km !== null
+        ?
+        `<div class="distance">
+          📍 ${parseFloat(h.distance_km).toFixed(2)} km away
+        </div>`
+        :
+        ''
+      }
+
+      <div class="h-info">
+
+        <div>
+          📍 ${h.address || 'Address unavailable'}
+        </div>
+
+        <div>
+          📞 ${h.phone || 'Phone unavailable'}
+        </div>
+
+        <div>
+          🕒 ${h.working_hours || 'Hours unavailable'}
+        </div>
+
+      </div>
+
+      <a
+        class="h-map"
+        target="_blank"
+        href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.name + ' ' + h.address)}"
+      >
+        Open in Google Maps
+      </a>
+
+    </div>
+
+  `;
+}
+  
+
+ function renderResults(data){
+
+  const container = document.getElementById('results');
+
+  let html = `
+
+    <div class="results-header">
+
+      <h2>Analysis Complete</h2>
+
+      <p>
+        Based on your symptoms,
+        here are the top predictions.
+      </p>
+
+    </div>
+
+  `;
+
+  data.predictions.forEach(pred => {
+
+    html += `
+
+      <div class="prediction">
+
+        <h3>
+          ${pred.diseases.join(', ')}
+        </h3>
+
+        <div class="top-title">
+          ⭐ Top Recommended Hospitals
+        </div>
+
+        <div class="hospital-grid">
+
+          ${pred.top_hospitals.map(h => hospitalCard(h)).join('')}
+
+        </div>
+
+        <div class="top-title">
+          📍 Other Nearby Hospitals
+        </div>
+
+        <div class="hospital-grid">
+
+          ${pred.nearby_hospitals.map(h => hospitalCard(h)).join('')}
+
+        </div>
+
+      </div>
+
+    `;
+  });
+
+  container.innerHTML = html;
+
+  container.scrollIntoView({
+    behavior:'smooth'
+  });
+}
+
+  async function runPredict(){
+
+    hideError();
+
+    const input = document.getElementById('symptom-input').value.trim();
+
+    if(!input){
+
+      showError("Please enter symptoms");
+
+      return;
+    }
+
+    try{
+
+      const res = await fetch('/predict', {
+
+        method:'POST',
+
+        headers:{
+          'Content-Type':'application/json'
+        },
+
+        body:JSON.stringify({
+
+          symptoms:input,
+
+          latitude:userLatitude,
+
+          longitude:userLongitude
+
+        })
+
+      });
+
+      const data = await res.json();
+
+      if(!res.ok){
+
+        showError(data.error || 'Prediction failed');
+
+        return;
+      }
+
+      renderResults(data);
+
+    }
+
+    catch(err){
+
+      showError("Server error. Make sure Flask is running.");
+    }
+  }
+
+</script>
+
+</body>
+</html> 
