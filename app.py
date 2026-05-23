@@ -369,6 +369,7 @@ def group_predictions_by_speciality(predictions):
 
 
 # ---------------- HOSPITAL MATCHING ----------------
+# ---------------- HOSPITAL MATCHING ----------------
 def find_hospitals(specialties, user_lat=None, user_lon=None):
 
     filtered_rows = []
@@ -384,44 +385,119 @@ def find_hospitals(specialties, user_lat=None, user_lon=None):
             row["specialisation"]
         ).lower()
 
+        # normalize text
+        hospital_spec = (
+            hospital_spec
+            .replace("-", " ")
+            .replace("/", ",")
+            .replace("|", ",")
+        )
+
         hospital_specs = [
             s.strip()
             for s in hospital_spec.split(",")
             if s.strip()
         ]
 
-        matched = False
+        matched_score = 0
 
         for spec in specialties:
 
             for hs in hospital_specs:
 
-                # strict exact match
+                # EXACT MATCH
                 if spec == hs:
-                    matched = True
-                    break
+                    matched_score += 5
 
-                # safe partial match
-                if (
-                    spec in hs
-                    and spec not in ["general"]
-                    and len(spec) > 3
-                ):
-                    matched = True
-                    break
+                # WORD MATCH
+                elif spec in hs:
+                    matched_score += 2
 
-            if matched:
-                break
+                # PARTIAL MATCH
+                elif hs in spec:
+                    matched_score += 1
 
-        if matched:
+        # only keep meaningful matches
+        if matched_score >= 2:
+
+            row = row.copy()
+            row["match_score"] = matched_score
+
             filtered_rows.append(row)
 
     filtered = pd.DataFrame(filtered_rows)
 
-    # fallback
+    # ---------------- NO MATCH FALLBACK ----------------
     if filtered.empty:
-        filtered = hospitals_df.copy()
 
+        return {
+            "top_hospitals": [],
+            "nearby_hospitals": []
+        }
+
+    # ---------------- DISTANCE ----------------
+    if user_lat and user_lon:
+
+        distances = []
+
+        for _, row in filtered.iterrows():
+
+            try:
+
+                dist = geodesic(
+                    (float(user_lat), float(user_lon)),
+                    (float(row["latitude"]), float(row["longitude"]))
+                ).km
+
+            except Exception:
+
+                dist = 9999
+
+            distances.append(dist)
+
+        filtered["distance_km"] = distances
+
+        filtered = filtered.sort_values(
+            by=["match_score", "distance_km", "rating"],
+            ascending=[False, True, False]
+        )
+
+    else:
+
+        filtered["distance_km"] = 0
+
+        filtered = filtered.sort_values(
+            by=["match_score", "rating"],
+            ascending=[False, False]
+        )
+
+    # remove duplicates
+    filtered = filtered.drop_duplicates(
+        subset=["name", "address"]
+    )
+
+    OUTPUT_COLS = [
+        "name",
+        "address",
+        "phone",
+        "rating",
+        "type",
+        "specialisation",
+        "working_hours",
+        "maps_link",
+        "distance_km"
+    ]
+
+    return {
+
+        "top_hospitals":
+            filtered.head(3)[OUTPUT_COLS]
+            .to_dict(orient="records"),
+
+        "nearby_hospitals":
+            filtered.iloc[3:6][OUTPUT_COLS]
+            .to_dict(orient="records")
+    }
     # ---------------- DISTANCE ----------------
     if user_lat and user_lon:
 
@@ -579,4 +655,3 @@ def predict():
 # ---------------- RUN ----------------
 if __name__ == "__main__":
     app.run(debug=True)
-    
